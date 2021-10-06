@@ -1,2 +1,9 @@
 <h1>Tonight's Dinner</h1>
 
+<ul>
+  <% @foods.each do |food| %>
+    <li>
+      <%= food.title %>
+    </li>
+  <% end %>
+</ul>
