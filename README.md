@@ -11,3 +11,10 @@ git clone https://github.com/coo990/tonights-dinner.git
 cd tonights-dinner
 bin/rails server
 ```
+
+## How to feature test
+```
+git clone https://github.com/coo990/tonights-dinner.git
+cd tonights-dinner
+rspec spec/features
+```
