@@ -3,7 +3,7 @@
 <ul>
   <% @foods.each do |food| %>
     <li>
-      <a href="/food/<%= food.id %>">
+      <a href="<%= food_path(food) %>">
         <%= food.title %>
       </a>
     </li>
