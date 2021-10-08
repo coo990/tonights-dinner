@@ -1,6 +1,8 @@
 # Tonight's Dinner
 
-Planning to create a web-app that allows a user to create and store their dinners.
+Created a web-app that allows me to input and store the dinners I cook in the evening. Helpful for tracking what I eat and what I can make.
+
+07/10/21 - MVP Nearly achieved, need to make the edit action work correctly.
 
 ## Technology used
 - Ruby on Rails
