@@ -4,6 +4,8 @@ Created a web-app that allows me to input and store the dinners I cook in the ev
 
 07/10/21 - MVP Nearly achieved, need to make the edit action work correctly.
 
+09/10/21 - MVP achieved; add, delete, edit and read functions working correctly. Next stage is to add some more features and CSS styling.
+
 ## Technology used
 - Ruby on Rails
 - Capybara
