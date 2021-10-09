@@ -12,7 +12,7 @@ class FoodController < ApplicationController
   end
 
   def create
-    @food = Food.new(title: "...", body: "...")
+    @food = Food.new(food_params)
 
     if @food.save
       redirect_to @food
@@ -20,4 +20,31 @@ class FoodController < ApplicationController
       render :new
     end
   end
+
+  def edit
+    @food = Food.find(params[:id])
+  end
+
+  def update
+    @food = Food.find(params[:id])
+
+    if @food.update(food_params)
+
+      redirect_to food_path(@food)
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @food = Food.find(params[:id])
+    @food.destroy
+
+    redirect_to root_path
+  end
+
+  private
+    def food_params
+      params.require(:food).permit(:title, :body)
+    end
 end

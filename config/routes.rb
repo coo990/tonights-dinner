@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   
   resources :food
   post "food/new", to: "food#create"
+  post "food/:id/edit", to: "food#update"
 end
