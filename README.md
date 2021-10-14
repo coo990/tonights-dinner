@@ -6,7 +6,7 @@ Created a web-app that allows me to input and store the dinners I cook in the ev
 
 09/10/21 - MVP achieved; add, delete, edit and read functions working correctly. Next stage is to add some more features and CSS styling.
 
-14/10/21 - Trying to deploy to Heroku so it can be hosted online, app keeps crashing so trying to figure out the problem. Once solved then will work on adding more features and CSS.
+14/10/21 - Trying to deploy to Heroku so it can be hosted online, app keeps crashing so trying to figure out the problem. Once solved then will work on adding more features and CSS..
 
 ## Technology used
 - Ruby on Rails
