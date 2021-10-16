@@ -1,10 +1,13 @@
 class FoodController < ApplicationController
+  # http_basic_authenticate_with name: "dhh", password: "secret",
+  #   except: [:index, :show]
+
+  before_action :set_food, only: [:edit, :show, :update, :destroy]
   def index
     @foods = Food.all
   end
 
   def show
-    @food = Food.find(params[:id])
   end
 
   def new
@@ -22,12 +25,9 @@ class FoodController < ApplicationController
   end
 
   def edit
-    @food = Food.find(params[:id])
   end
 
   def update
-    @food = Food.find(params[:id])
-
     if @food.update(food_params)
       redirect_to food_path(@food)
     else
@@ -36,9 +36,7 @@ class FoodController < ApplicationController
   end
 
   def destroy
-    @food = Food.find(params[:id])
     @food.destroy
-
     redirect_to root_path
   end
 
@@ -46,4 +44,9 @@ class FoodController < ApplicationController
     def food_params
       params.require(:food).permit(:title, :body)
     end
+
+    def set_food
+      @food = Food.find(params[:id])
+    end
+
 end
