@@ -4,7 +4,7 @@ class FoodController < ApplicationController
 
   before_action :set_food, only: [:edit, :show, :update, :destroy]
   def index
-    @foods = Food.all
+    @foods = Food.order("created_at DESC")
   end
 
   def show
