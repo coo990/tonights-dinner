@@ -5,6 +5,7 @@
 <ul>
   <% @foods.each do |food| %>
     <li>
+      <%= food.created_at.strftime("%B %d %Y, %l:%M%P") %>
       <%= link_to food.title, food %>
     </li>
   <% end %>
