@@ -1,5 +1,6 @@
 <h1><%= @food.title %></h1>
 <p><%= @food.body %></p>
+<p>Created at <%= @food.created_at.strftime("%d/%m/%Y")%></p>
 
 <ul>
   <li><%= link_to "Edit", edit_food_path(@food)%></li>
