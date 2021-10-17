@@ -1,12 +1,17 @@
-<h1>Tonight's Dinner</h1>
-
-<%= link_to "ADD +", new_food_path %>
-
-<ul>
-  <% @foods.each do |food| %>
-    <li>
-      <%= food.created_at.strftime("%d/%m/%Y") %>
-      <%= link_to food.title, food %>
-    </li>
-  <% end %>
-</ul>
+<div class="header">
+  <h1>Tonight's Dinner</h1>
+  <br>
+</div>
+<div>
+  <%= link_to "ADD +", new_food_path, class: "btn btn-default" %> 
+  <ul>
+    <div class="food-list">
+      <% @foods.each do |food| %>
+        <li>
+          <%= food.created_at.strftime("%d/%m/%Y") %>
+          <%= link_to food.title, food %>
+        </li>
+      <% end %>
+    </div>
+  </ul>
+</div>

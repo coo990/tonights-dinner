@@ -18,7 +18,7 @@ class FoodController < ApplicationController
     @food = Food.new(food_params)
 
     if @food.save
-      redirect_to @food
+      redirect_to root_path
     else
       render :new
     end

@@ -20,6 +20,7 @@ test:
   <<: *default
   database: tonights-dinner_test
 
+# Uncomment below and configure when pushing to heroku
 # production:
 #   <<: *default
 #   adapter: postgresql
