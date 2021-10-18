@@ -16,6 +16,7 @@ class FoodController < ApplicationController
 
   def create
     @food = Food.new(food_params)
+    @food.user = User.first
 
     if @food.save
       redirect_to root_path
