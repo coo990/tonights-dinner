@@ -1,19 +1,20 @@
 <div class="header">
+  
   <h1>Tonight's Dinner</h1>
   <br>
 </div>
 <div>
-  <%= link_to "ADD +", new_food_path, class: "btn btn-default" %> 
   <ul>
     <div class="food-list">
+    <%= link_to "ADD +", new_food_path, class: "btn btn-default" %><br>
       <% @foods.each do |food| %>
         <li>
-          <%= food.created_at.strftime("%d/%m/%Y") %>
+          <%= food.created_at.strftime("%d/%m") %>
           <%= link_to food.title, food %>
         </li>
       <% end %>
       <li>
-      12/10/2021 <%= link_to "Jollof Rice" %>
+      12/10 <%= link_to "Jollof Rice" %>
       </li>
     </div>
   </ul>
