@@ -1,7 +1,8 @@
-<h1>New Dinner</h1>
+<h1 class="header">New Dinner</h1>
 
 <%= render "form", food: root_path %>
 <br>
-<%= link_to 'Back', :back %>
-<br>
-<%= link_to "<< Home", root_path %>
+<div class="form">
+  <%= link_to 'Back', :back, class: "btn btn-primary"%>
+  <%= link_to "<< Home", root_path, class: "btn btn-success" %>
+</div>
