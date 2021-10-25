@@ -1,7 +1,7 @@
 <h2 align="center"><%= @food.title %></h2>
-<div class="show">
+<div class="well col-xs-5 col-xs-offset-3">
   <h4>Notes:</h4>
-  <p class="body-box"><%= @food.body %></p>
+  <p class="body-box"><%= @food.body %></p><br>
   <%= link_to "Edit", edit_food_path(@food), class: "btn btn-primary"%> | 
   <%= link_to "Home", root_path, class: "btn btn-success "%> | 
   <%= link_to "Delete", food_path(@food), method: :delete,
