@@ -6,9 +6,9 @@ body {
   background-color: #ffe6cc;
 }
 
-// .homepage {
-//   text-align: ;
-// }
+h1 {
+  text-align: center;
+}
 
 .header {
   text-align: center;
@@ -28,7 +28,7 @@ body {
   font-size: large
 }
 
-.show, .form{
+.form{
   font-size: large;
   list-style-type: none;
   padding-left: 0;
@@ -37,11 +37,11 @@ body {
 }
 
 .card-body{
- border-top: 1px solid #eaeaea;
- padding-top: 15px;
+  padding-top: 15px;
  padding-bottom: 1px;
  width: 400px;
  padding-left: 2;
+
 //  text-align: center;
 //  max-width: 220px;
 //  margin: auto;
@@ -53,3 +53,8 @@ body {
   padding-left: 5;
   // max-width: 590px;
 }
+
+.title-body {
+  font-weight: normal;
+  font-size: 1.5em;
+ }

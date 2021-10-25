@@ -1,29 +1,20 @@
-<div class="header">
-  
-  <h1>Tonight's Dinner</h1>
-  <br>
-</div>
+<h1>Tonight's Dinner</h1><br>
 <div>
+  <div class="add-button">
+    <%= link_to "ADD +", new_food_path, class: "btn btn-default" %><br>
+  </div>
   <ul>
-      <div class="add-button">
-        <%= link_to "ADD +", new_food_path, class: "btn btn-default" %>
-      </div>
-      <div class="food-list">
-        <% @foods.each do |food| %>
-          <div class="card-body">
-            <div class="row">
-              <div class="col-xs-8 col-xs-offset-2">
-                <div class="well well-lg">
-                  <%= food.created_at.strftime("%d/%m") %>
-                  <%= link_to food.title, food %>
-                </div>
+    <% @foods.each do |food| %>
+      <div class="row">
+        <div class="well col-xs-5 col-xs-offset-3">
+            <div class="card text-white bg-secondary mb-3">
+              <div class="title-body">
+                <%= food.created_at.strftime("%d/%m") %>
+                <%= link_to food.title, food %>
               </div>
             </div>
-          </div>
-        <% end %>
-        <li>
-        <%# 12/10 <%= link_to "Jollof Rice" %>
-        </li>
+        </div>
       </div>
+    <% end %>
   </ul>
 </div>
