@@ -1,6 +1,6 @@
 # Tonight's Dinner
 
-Created a web-app that allows me to input and store the dinners I cook in the evening. Helpful for tracking what I eat and what I can make.
+Created a web-app that allows me to input and store the dinners I cook in the evening. Helpful for tracking what I eat and what I can make. Contains CRUD elements working successfully to add dinner, edit posting and delete food.
 
 Future possible features:
  - A page that when loaded, displays a random food entry if the user is not sure what to eat.
