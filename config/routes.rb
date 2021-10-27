@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :food
   post "food/new", to: "food#create"
   post "food/:id/edit", to: "food#update"
+  get "food/:id/random", to: "food#random", as: 'random_food_path'
 end
