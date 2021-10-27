@@ -1,10 +1,9 @@
 # Tonight's Dinner
 
-Created a web-app that allows me to input and store the dinners I cook in the evening. Helpful for tracking what I eat and what I can make. Contains CRUD elements working successfully to add dinner, edit posting and delete food.
+Created a web-app that allows me to input and store the dinners I cook in the evening. Helpful for tracking what I eat and what I can make. Contains CRUD elements working successfully to add dinner, edit posting and delete food. Also contains a 'Choose Dinner for Me!' feature, where when clicked, runs a function that randomly displays a dinner from the database, if the user is unsure what to eat.
 
 Future possible features:
- - A page that when loaded, displays a random food entry if the user is not sure what to eat.
- - Recipe suggestions using recipe APIs.
+ - Recipe suggestions using recipe APIs within the page.
 
 07/10/21 - MVP Nearly achieved, need to make the edit action work correctly.
 
@@ -14,12 +13,21 @@ Future possible features:
 
 17/10/21 - CSS and bootstrap styling applied, still working on the buttons and format of pages.
 
-![Imgur](https://i.imgur.com/B4GfIs2.png)
+27/10/21 - Implemented random dinner display feature
+
+## Screenshot
+
+![Imgur](https://i.imgur.com/ZMbUmKa.png)
+
+## Sketch idea
+
+![Imgur](https://i.imgur.com/sPqEjEx.jpg)
 
 ## Technology used
 - Ruby on Rails
 - Capybara
 - Rspec
+- Bootstrap
 
 ## How to run
 ```
