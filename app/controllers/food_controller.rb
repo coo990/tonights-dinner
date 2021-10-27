@@ -41,6 +41,10 @@ class FoodController < ApplicationController
     redirect_to root_path
   end
 
+  def random
+    @food = Food.offset(rand(Food.count)).first
+  end
+
   private
     def food_params
       params.require(:food).permit(:title, :body)
