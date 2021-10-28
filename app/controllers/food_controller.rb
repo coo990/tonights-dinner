@@ -53,5 +53,5 @@ class FoodController < ApplicationController
     def set_food
       @food = Food.find(params[:id])
     end
-
 end
+
