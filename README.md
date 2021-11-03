@@ -33,6 +33,8 @@ Future possible features:
 ```
 git clone https://github.com/coo990/tonights-dinner.git
 cd tonights-dinner
+// Create database
+rake db:create
 bin/rails server
 http://localhost:3000/
 ```
