@@ -1,8 +1,9 @@
-<h1>Tonight's Dinner</h1><br>
+<h1>Tonight's Dinner</h1>
+<p>Don't click the "I'm Feeling Hungry!" button below if you have no food!</p>
 <div>
   <div class="add-button">
     <%= link_to "ADD +", new_food_path, class: "btn btn-default" %>
-    <%= link_to "Choose Dinner for Me!", random_food_path_url(@foods), class: "btn btn-default" %><br>
+    <%= link_to "I'm Feeling Hungry!", random_food_path_url(@foods), class: "btn btn-default" %><br>
   </div>
   <ul>
     <% @foods.each do |food| %>
