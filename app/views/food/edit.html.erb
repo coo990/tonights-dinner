@@ -3,7 +3,7 @@
 <%= render "form", food: @food %>
 <br>
 
-<%= link_to 'Back', :back %>
-<br>
-<%= link_to "<< Home", root_path%>
-
+<div class="form">
+  <%= link_to 'Back', :back, class: "btn btn-primary"%> |
+  <%= link_to "Home", root_path, class: "btn btn-success "%>
+</div>
