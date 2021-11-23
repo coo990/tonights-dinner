@@ -1,14 +1,15 @@
+# frozen_string_literal: true
+
 class FoodController < ApplicationController
   # http_basic_authenticate_with name: "dhh", password: "secret",
   #   except: [:index, :show]
 
-  before_action :set_food, only: [:edit, :show, :update, :destroy]
+  before_action :set_food, only: %i[edit show update destroy]
   def index
-    @foods = Food.order("created_at DESC")
+    @foods = Food.order('created_at DESC')
   end
 
-  def show
-  end
+  def show; end
 
   def new
     @food = Food.new
@@ -25,8 +26,7 @@ class FoodController < ApplicationController
     end
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     if @food.update(food_params)
@@ -46,12 +46,12 @@ class FoodController < ApplicationController
   end
 
   private
-    def food_params
-      params.require(:food).permit(:title, :body)
-    end
 
-    def set_food
-      @food = Food.find(params[:id])
-    end
+  def food_params
+    params.require(:food).permit(:title, :body)
+  end
+
+  def set_food
+    @food = Food.find(params[:id])
+  end
 end
-

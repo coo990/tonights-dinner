@@ -1,0 +1,5 @@
+Style/Documentation:
+  Enabled: false
+Metrics/ClassLength:
+  Exclude:
+    - "/Users/chukaokoye-ahaneku/Projects/tonights-dinner/bin/bundle"
