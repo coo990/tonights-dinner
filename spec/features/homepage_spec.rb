@@ -14,9 +14,8 @@ feature 'Tonights Dinner' do
     expect(page).to have_content('What did you have tonight?')
   end
 
-  scenario 'contains food links' do
+  scenario 'contains page links' do
     visit('/')
     page.has_link?('true')
   end
-
 end
