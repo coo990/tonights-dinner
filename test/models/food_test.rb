@@ -9,7 +9,8 @@ class FoodTest < ActiveSupport::TestCase
 
   test "should not save food without title" do
     food = Food.new
-    assert_not food.save
+    food.body = "Delicious!"
+    assert_not food.save, "Saved food without a title"
   end
 
   test "should report error" do
