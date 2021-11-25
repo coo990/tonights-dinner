@@ -11,4 +11,10 @@ class FoodTest < ActiveSupport::TestCase
     food = Food.new
     assert_not food.save
   end
+
+  test "should report error" do
+    assert_raises(NameError) do
+      some_undefined_variable
+    end
+  end
 end
