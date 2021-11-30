@@ -36,5 +36,6 @@ open http://localhost:3000/
 ```
 git clone https://github.com/coo990/tonights-dinner.git
 cd tonights-dinner
+bundle install
 rspec spec/features
 ```
