@@ -5,7 +5,7 @@ Created a web-app that allows me to input and store the dinners I cook in the ev
 
 ## Screenshot
 
-![Imgur](https://i.imgur.com/ZMbUmKa.png)
+![Imgur](https://i.imgur.com/JwwZBqv.png)
 
 ## How to run
 ```
