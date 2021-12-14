@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class FoodController < ApplicationController
-
   before_action :set_food, only: %i[edit show update destroy]
   def index
     @foods = Food.order('created_at DESC')
