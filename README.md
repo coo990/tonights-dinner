@@ -1,7 +1,7 @@
 # Tonight's Dinner
 
 ## My Approach
-Created a web-app that allows me to input and store the dinners I cook in the evening. Helpful for tracking what I eat and what I can make. Contains CRUD elements working successfully to add dinner, edit posting and delete food. 
+Created a web-app that allows me to input, store and search the dinners I cook in the evening. Helpful for tracking what I eat and what I can make. Contains CRUD elements working successfully to add dinner, edit posting and delete food. 
 
 Also contains a "I'm Feeling Hungry" feature, where when clicked, runs a function that randomly displays a dinner from the database, if the user is unsure what to eat.
 
@@ -9,7 +9,7 @@ Inspired by the [r/tonightsdinner](https://www.reddit.com/r/tonightsdinner/) sub
 
 ## Screenshot
 
-![Imgur](https://i.imgur.com/JwwZBqv.png)
+![Imgur](https://i.imgur.com/YwSJnfC.png)
 
 ## How to run
 ```
@@ -35,7 +35,7 @@ open http://localhost:3000/
 ## Future possible features:
  - Recipe suggestions using recipe APIs within the page.
  - Login/Signup capabilities.
- - Search function.
+ - ~~Search function.~~
 
 ## How to feature test
 ```
