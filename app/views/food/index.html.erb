@@ -5,6 +5,14 @@
     <%= link_to "ADD +", new_food_path, class: "btn btn-default" %>
     <%= link_to "I'm Feeling Hungry!", random_food_path_url(@foods), class: "btn btn-default" %><br>
   </div>
+  <div class="search-form">
+    <%= form_tag food_index_url, :method => 'get' do %>
+      <p>
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search" %>
+      </p>
+    <% end %>
+  </div>
   <ul>
     <% @foods.each do |food| %>
       <div class="row">

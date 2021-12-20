@@ -4,6 +4,7 @@ class FoodController < ApplicationController
   before_action :set_food, only: %i[edit show update destroy]
   def index
     @foods = Food.order('created_at DESC')
+    @foods = Food.search(params[:search])
   end
 
   def show; end
@@ -44,7 +45,7 @@ class FoodController < ApplicationController
   private
 
   def food_params
-    params.require(:food).permit(:title, :body)
+    params.require(:food).permit(:title, :body, :search)
   end
 
   def set_food
