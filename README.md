@@ -35,6 +35,7 @@ open http://localhost:3000/
 ## Future possible features:
  - Recipe suggestions using recipe APIs within the page.
  - Login/Signup capabilities.
+ - Search function.
 
 ## How to feature test
 ```
