@@ -5,6 +5,8 @@ Created a web-app that allows me to input and store the dinners I cook in the ev
 
 Also contains a "I'm Feeling Hungry" feature, where when clicked, runs a function that randomly displays a dinner from the database, if the user is unsure what to eat.
 
+Inspired by the [r/tonightsdinner](https://www.reddit.com/r/tonightsdinner/) subreddit on Reddit and my passion for food.
+
 ## Screenshot
 
 ![Imgur](https://i.imgur.com/JwwZBqv.png)
