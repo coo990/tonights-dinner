@@ -15,6 +15,7 @@ Inspired by the [r/tonightsdinner](https://www.reddit.com/r/tonightsdinner/) sub
 ```
 git clone https://github.com/coo990/tonights-dinner.git
 cd tonights-dinner
+// Install gems
 bundle install
 // Create database
 rake db:create
