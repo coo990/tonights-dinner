@@ -12,6 +12,7 @@ class FoodController < ApplicationController
   # Rubocop linted function to one line
   def show; end
 
+  # Creates new food object to database
   def new
     @food = Food.new
   end
@@ -25,7 +26,7 @@ class FoodController < ApplicationController
       render :new
     end
   end
-  
+
 # Rubocop linted function to one line
   def edit; end
 
