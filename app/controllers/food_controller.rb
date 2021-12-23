@@ -27,7 +27,7 @@ class FoodController < ApplicationController
     end
   end
 
-# Rubocop linted function to one line
+  # Rubocop linted function to one line
   def edit; end
 
   def update
