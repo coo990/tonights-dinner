@@ -30,7 +30,6 @@ gem 'bootstrap-sass', '~> 3.4.1'
 gem 'jquery-rails'
 gem 'rexml', '~> 3.2', '>= 3.2.4'
 gem 'sassc-rails', '>= 2.1.0'
-gem 'travis'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
