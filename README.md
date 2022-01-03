@@ -33,6 +33,7 @@ open http://localhost:3000/
 - Rspec
 - HTML/CSS
 - Bootstrap
+- SQLite (will change to PSQL soon)
 
 ## Future possible features:
  - Recipe suggestions using recipe APIs within the page.
