@@ -39,6 +39,7 @@ open http://localhost:3000/
  - Recipe suggestions using recipe APIs within the page.
  - Login/Signup capabilities.
  - ~~Search function.~~
+ - Upload images to food.
 
 ## How to feature test
 ```
