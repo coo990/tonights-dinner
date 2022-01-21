@@ -6,9 +6,9 @@ class Food < ApplicationRecord
 
   def self.search(search)
     if search
-      self.where("TITLE LIKE ?", "%#{search}%")
+      where('TITLE LIKE ?', "%#{search}%")
     else
-      self.all
+      all
     end
   end
 end
