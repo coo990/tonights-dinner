@@ -1,4 +1,4 @@
-# Tonight's Dinner
+# Tonight's Dinner ![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
 
 ## My Approach
 Created a web-app that allows me to input, store and search the dinners I cook in the evening. Helpful for tracking what I eat and what I can make. Contains CRUD elements working successfully to add dinner, edit posting and delete food. 
