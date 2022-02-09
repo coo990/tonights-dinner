@@ -1,30 +1,29 @@
 <h1>Tonight's Dinner</h1>
 <p>Don't click the "I'm Feeling Hungry!" button below if you have no food!</p>
-<div>
-  <div class="add-button">
-    <%= link_to "ADD +", new_food_path, class: "btn btn-default" %>
-    <%= link_to "I'm Feeling Hungry!", random_food_path_url(@foods), class: "btn btn-default" %><br>
-  </div>
-  <div class="search-form">
-    <%= form_tag food_index_url, :method => 'get' do %>
-      <p>
-        <%= text_field_tag :search, params[:search] %>
-        <%= submit_tag "Search" %>
-      </p>
-    <% end %>
-  </div>
-  <ul>
-    <% @foods.each do |food| %>
-      <div class="row">
-        <div class="well col-xs-5 col-xs-offset-3">
-            <div class="card text-white bg-secondary mb-3">
-              <div class="title-body">
-                <%= food.created_at.strftime("%d/%m") %>
-                <%= link_to food.title, food %>
-              </div>
-            </div>
-        </div>
-      </div>
-    <% end %>
-  </ul>
+<div class="add-button">
+  <%= link_to "ADD +", new_food_path, class: "btn btn-default" %>
+  <%= link_to "I'm Feeling Hungry!", random_food_path_url(@foods), class: "btn btn-default" %><br>
 </div>
+<div class="search-form">
+  <%= form_tag food_index_url, :method => 'get' do %>
+    <p>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search" %>
+    </p>
+  <% end %>
+</div>
+<ul>
+  <% @foods.each do |food| %>
+    <div class="row">
+      <div class="well col-xs-5 col-xs-offset-3">
+          <div class="card text-white bg-secondary mb-3">
+            <div class="title-body">
+              <%= food.created_at.strftime("%d/%m") %>
+              <%= link_to food.title, food %>
+            </div>
+          </div>
+      </div>
+    </div>
+  <% end %>
+</ul>
+
