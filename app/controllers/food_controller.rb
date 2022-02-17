@@ -21,6 +21,7 @@ class FoodController < ApplicationController
     @food = Food.new(food_params)
 
     if @food.save
+      flash[:success] = "Great! You're food has been added!"
       redirect_to root_path
     else
       render :new
