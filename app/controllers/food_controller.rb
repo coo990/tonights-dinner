@@ -3,7 +3,6 @@
 class FoodController < ApplicationController
   before_action :set_food, only: %i[edit show update destroy]
 
-  # Displays all food in index page
   def index
     @foods = Food.order('created_at DESC')
     @foods = Food.search(params[:search])
@@ -12,7 +11,6 @@ class FoodController < ApplicationController
   # Rubocop linted function to one line
   def show; end
 
-  # Creates new food object to database
   def new
     @food = Food.new
   end
