@@ -7,4 +7,7 @@ Rails.application.routes.draw do
   post 'food/new', to: 'food#create'
   post 'food/:id/edit', to: 'food#update'
   get 'food/:id/random', to: 'food#random', as: 'random_food_path'
+
+  resources :users, only: [:new, :create, :index, :show]
+  resources :sessions, only: [:new, :create, :destroy]
 end
