@@ -1,14 +1,24 @@
 class SessionsController < ApplicationController
 
-  def create
-    @user = User.find_by(username: params[:username])
+  def new
+  end
 
-    if !!@user && @user.authenticate(params[:password])
+  def create
+    session_params = params.permit(:email, :password)
+    @user = User.find_by(email: session_params[:email])
+
+    if @user && @user.authenticate(session_params[:password])
       session[:user_id] = @user.id
-      redirect_to user_path
+      redirect_to @user
     else
-      message = "Something went wrong! Make sure your username and password are correct!"
-      redirect_to login_path, notice: message
+      flash[:notice] = "Login is invalid!"
+      redirect_to new_session_path
     end
+  end
+
+  def destroy
+    session[:user_id] = nil
+    flash[:notice] = "You have been signed out!"
+    redirect_to new_session_path
   end
 end

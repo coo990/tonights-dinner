@@ -9,10 +9,7 @@ Rails.application.routes.draw do
   get 'food/:id/random', to: 'food#random', as: 'random_food_path'
 
   resources :users, only: [:new, :create, :index, :show]
-  
-  get '/login', to: 'sessions#login'
-  post '/login', to: 'sessions#create'
-  post '/logout', to: 'sessions#destroy'
-  get '/logout', to: 'sessions#destory'
+  resources :sessions, only: [:new, :create, :destroy]
+  get 'sessions/login', to: 'sessions#login'
 
 end
