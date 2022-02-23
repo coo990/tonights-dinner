@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+
   root 'food#index'
 
   resources :food
@@ -8,8 +9,10 @@ Rails.application.routes.draw do
   post 'food/:id/edit', to: 'food#update'
   get 'food/:id/random', to: 'food#random', as: 'random_food_path'
 
-  resources :users, only: [:new, :create, :index, :show]
-  resources :sessions, only: [:new, :create, :destroy]
-  get 'sessions/login', to: 'sessions#login'
+  resources :users, only: [:new, :create]
 
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
+  get 'welcome', to: 'sessions#welcome'
+  
 end
