@@ -1,12 +1,12 @@
 <h1>Tonight's Dinner</h1>
-<%= button_to "Logout", logout_path, method: :delete%>
 <p>Don't click the "I'm Feeling Hungry!" button below if you have no food!</p>
 <% flash.each do |key, value| %>
   <div class="alert alert-<%= key %>"><%= value %></div>
 <% end %>
 <div class="add-button">
   <%= link_to "ADD +", new_food_path, class: "btn btn-default" %>
-  <%= link_to "I'm Feeling Hungry!", random_food_path_url(@foods), class: "btn btn-default" %><br>
+  <%= link_to "I'm Feeling Hungry!", random_food_path_url(@foods), class: "btn btn-default" %>
+  <%= link_to "Logout", logout_path, method: :delete, class: "btn btn-danger"%>  <br>
 </div>
 <div class="search-form">
   <%= form_tag food_index_url, :method => 'get' do %>

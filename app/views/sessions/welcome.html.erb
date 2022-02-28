@@ -5,7 +5,8 @@
   <% end %>
   <% if logged_in? %>
     <h1>You are Logged In, <%= current_user.username%></h1>
-    <%= button_to "Logout", logout_path, method: :get%>
+    <%= button_to "Logout", logout_path, method: :get%><br>
+<%= link_to "Home", root_path, class: "btn btn-success" %>
   <% else %>
     <%= button_to "Login", '/login', method: :get%>
     <%= button_to "Sign Up", '/users/new', method: :get%>

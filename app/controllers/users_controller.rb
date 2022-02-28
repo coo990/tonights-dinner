@@ -8,7 +8,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:success] = "Welcome to Tonight's Dinner!"
+      session[:user_id] = @user.id
+      flash[:success] = "Welcome #{@user.username}!"
       redirect_to food_index_path
     else
       flash[:error] = "Registration not saved"
