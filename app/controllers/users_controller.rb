@@ -6,10 +6,19 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.create(params.require(:user).permit(:username, :password))
+    @user = User.new(user_params)
+    if @user.save
+      flash[:success] = "Welcome to Tonight's Dinner!"
+      redirect_to food_index_path
+    else
+      flash[:error] = "Registration not saved"
+      render 'new'
+    end
+  end
 
-    session[:user_id] = @user.id
+  private
 
-    redirect_to '/welcome'
+  def user_params
+    params.require(:user).permit(:username, :email, :password)
   end
 end
