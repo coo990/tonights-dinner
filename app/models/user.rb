@@ -1,4 +1,7 @@
 class User < ApplicationRecord
+  has_many :foods
+  before_save {self.email = email.downcase}
+  
   validates :username, presence: true, uniqueness: true,
     length: { minimum: 3, maximum: 25 }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i

@@ -8,7 +8,6 @@ class FoodController < ApplicationController
     @foods = Food.search(params[:search])
   end
 
-  # Rubocop linted function to one line
   def show; end
 
   def new
@@ -17,6 +16,7 @@ class FoodController < ApplicationController
 
   def create
     @food = Food.new(food_params)
+    @food.user = User.first
 
     if @food.save
       flash[:success] = "Great! You're food has been added!"
