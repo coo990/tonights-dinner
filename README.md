@@ -37,7 +37,7 @@ open http://localhost:3000/
 
 ## Future possible features:
  - Recipe suggestions using recipe APIs within the page.
- - Login/Signup capabilities.
+ - ~~Login/Signup capabilities.~~ Updated 28/02
  - ~~Search function.~~
  - Upload images to food.
 
