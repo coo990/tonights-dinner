@@ -9,7 +9,7 @@ Inspired by the [r/tonightsdinner](https://www.reddit.com/r/tonightsdinner/) sub
 
 ## Demo
 
-![Imgur](https://i.imgur.com/F1qOlI3.gifv)
+![](ScreenRecording.gif)
 
 ## How to run
 ```
