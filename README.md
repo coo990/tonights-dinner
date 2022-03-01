@@ -7,9 +7,9 @@ Also contains a "I'm Feeling Hungry" feature, where when clicked, runs a functio
 
 Inspired by the [r/tonightsdinner](https://www.reddit.com/r/tonightsdinner/) subreddit on Reddit and my passion for food.
 
-## Screenshot
+## Demo
 
-![Imgur](https://i.imgur.com/YwSJnfC.png)
+![Imgur](https://i.imgur.com/F1qOlI3.gifv)
 
 ## How to run
 ```
@@ -40,6 +40,7 @@ open http://localhost:3000/
  - ~~Login/Signup capabilities.~~ Updated 28/02
  - ~~Search function.~~
  - Upload images to food.
+ - Publicly hosted.
 
 ## How to feature test
 ```
