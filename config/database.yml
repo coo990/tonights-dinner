@@ -22,7 +22,7 @@ test:
   database: tonights-dinner_test
 
 # Uncomment below and configure when pushing to heroku
-# production:
-#   <<: *default
-#   adapter: postgresql
-#   database: db/production.sqlite3
+production:
+  <<: *default
+  adapter: postgresql
+  database: db/production.sqlite3
